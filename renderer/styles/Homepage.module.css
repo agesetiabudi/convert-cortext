@@ -1,46 +1,107 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .fileInput {
-    margin: 15px 0;
-  }
-  
-  .button {
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #005bb5;
-  }
-  
-  .downloadButton {
-    background-color: #28a745;
-    margin-top: 10px;
-  }
-  
-  .downloadButton:hover {
-    background-color: #218838;
-  }
-  
+  height: 93vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  padding: 20px 50px;
+}
+
+.button{
+  background: #FFFF;
+  border: 3px solid #A2A2A2;
+  border-radius: 20px;
+  padding: 30px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 17px;
+  height: 198px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 220px;
+}
+
+.button.active{
+  border: 3px solid #7852FF;
+  background: #F6F6F6;
+}
+
+.button .label{
+  margin-top: 12px;
+}
+
+.containerCategory{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.uploadContainer {
+  width: 100%;
+  max-width: 800px; /* Atur sesuai kebutuhan */
+  height: 250px; /* Sesuaikan dengan gambar */
+  border: 2px dashed #ccc;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.uploadContainer:hover {
+  border-color: #7852FF;
+}
+
+.uploadIcon {
+  font-size: 32px; /* Sesuaikan dengan ikon */
+  color: #666;
+}
+
+.uploadText {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.buttonCancel{
+  background: #D3D3D3;
+  border: 1px solid #D3D3D3;
+  padding: 15px 41px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.buttonSubmit{
+  background: #7852FF;
+  border: 1px solid #7852FF;
+  padding: 15px 41px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.buttonContainer{
+  float: inline-end;
+  margin-top: 40px;
+}
+
+.containerSub{
+  padding: 0px 137px;
+}
